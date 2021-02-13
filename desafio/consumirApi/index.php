@@ -32,7 +32,7 @@
       <input type="submit" name="enviar" value="Enviar" />
     </form>
 
-    <div class="jaari">
+    <div>
       <p>First episode 24-03-2005</p>
       <p>Last episode 11-05-2006</p>
 

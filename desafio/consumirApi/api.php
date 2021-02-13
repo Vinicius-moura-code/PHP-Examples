@@ -15,10 +15,10 @@ echo "<br>";
   <div class="container">
   <?php
   $dia = $_POST['dia'];
-  $diaz = str_replace("-", "", $dia);
+  $diaf = str_replace("-", "", $dia);
   $dia2 = $_POST['dia2'];
-  $diax = str_replace("-", "", $dia2);
-  $url = "../api.json";
+  $dia2f = str_replace("-", "", $dia2);
+  $url = "https://officeapi.dev/api/episodes";
   $result = json_decode(file_get_contents($url));
 
   ?>
@@ -41,8 +41,8 @@ echo "<br>";
       $airDate = $data->airDate;
       $x = substr($airDate, 0, 10);
 
-      $parseer = str_replace("-", "", $x);
-      if ($parseer >= $diaz && $parseer <= $diax) {
+      $parser = str_replace("-", "", $x);
+      if ($parser >= $diaf && $parser <= $dia2f) {
 
 
 
@@ -56,7 +56,7 @@ echo "<br>";
     }
 
     echo "</table>";
-    echo "Total de episodeos : " . $contador;
+    echo "Total episodes : " . $contador;
 
 
     ?>
