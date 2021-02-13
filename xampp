@@ -1,0 +1,10 @@
+cd /opt/lampp
+
+#START
+sudo ./lampp start 
+
+#STOP
+sudo ./lampp stop
+
+#Caminho arquivos php
+/opt/lampp/htdocs
